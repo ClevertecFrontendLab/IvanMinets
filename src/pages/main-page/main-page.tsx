@@ -15,7 +15,7 @@ export const MainPage: React.FC = () => {
                     <img src={viteLogo} className='logo' alt='Vite logo' />
                 </a>
                 <a href='https://react.dev' target='_blank'>
-                    <img src={reactLogo} className='logo react' alt='React logo' />
+                    <img src={reactLogo} className='logoreact' alt='React logo' />
                 </a>
                 <a href='https://www.typescriptlang.org/' target='_blank'>
                     <img src={tsLogo} className='logo' alt='TS logo' />
