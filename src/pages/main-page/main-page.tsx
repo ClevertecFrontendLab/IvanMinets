@@ -1,5 +1,5 @@
 import {Layout} from "antd";
-import {NavMenu} from "@components/menu";
+import {NavMenu} from "@components/navmenu";
 import {useState} from "react";
 import s from "./main-page.module.css"
 import {Trigger} from "@components/trigger";
@@ -30,3 +30,4 @@ export const MainPage = () => {
         </Layout>
     );
 };
+
