@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    backdrop-filter: blur(12px);
+    background: rgba(121, 156, 213, 0.1);
+}
+
+
+.ant-layout-sider {
+    background: #fff;
+}
+
+
+.ant-layout, .ant-layout-footer, .ant-layout-header {
+    background: none;
+}
+
+.ant-layout-footer, .ant-layout-header {
+    padding: 0;
+    height: auto;
+    line-height: 1;
+}
+
+.ant-layout.ant-layout-has-sider {
+    background: url("public/main_page_light.jpeg") no-repeat center;
+    background-size: cover;
+}
