@@ -1,6 +1,6 @@
 import {CalendarOutlined, HeartFilled, IdcardOutlined, TrophyFilled} from "@ant-design/icons";
 import {Menu} from "antd";
-import s from "./navmenu.module.css"
+import s from "./menu.module.css"
 import sprite from "@utils/sprite.svg"
 
 type Props = {

@@ -16,3 +16,4 @@ export const Trigger = ({isCollapsed, onTrigger}: Props) => {
         </div>
     );
 };
+
