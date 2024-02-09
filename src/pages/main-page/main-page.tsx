@@ -3,6 +3,7 @@ import {NavMenu} from "@components/menu";
 import {useState} from "react";
 import s from "./main-page.module.css"
 import {Trigger} from "@components/trigger";
+import {HeaderMain} from "@components/header/HeaderMain.tsx";
 
 const {Header, Footer, Sider, Content} = Layout;
 
@@ -23,7 +24,7 @@ export const MainPage = () => {
                 <Trigger isCollapsed={collapsed} onTrigger={collapseSidebarHandler}/>
             </Sider>
             <Layout>
-                <Header>Header</Header>
+                <Header><HeaderMain /></Header>
                 <Content>Content</Content>
                 <Footer>Footer</Footer>
             </Layout>
