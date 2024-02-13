@@ -6,7 +6,6 @@ export const FooterCard = () => (
         headStyle={{padding: '10px 12px', textAlign: 'left'}}
         bodyStyle={{
             padding: '12px 0',
-
             display: 'flex',
             justifyContent: 'space-between',
         }}
