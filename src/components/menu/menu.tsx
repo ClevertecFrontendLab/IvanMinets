@@ -25,7 +25,6 @@ export const NavMenu = ({isCollapsed}: Props) => {
 
             <Menu
                 className={s.menu}
-
                 mode={"vertical"}
                 items={[
                     {
