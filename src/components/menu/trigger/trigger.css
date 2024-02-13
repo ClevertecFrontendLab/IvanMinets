@@ -12,6 +12,13 @@
     left: 100%;
     transform: translateY(-50%);
 
+    @media (max-width: 576px) {
+        width: 32px;
+        height: 48px;
+        top: 7%;
+    }
+
+
     & :hover {
         cursor: pointer;
     }

@@ -9,6 +9,7 @@
     background: var(--white);
 }
 
+
 .ant-layout,
 .ant-layout-footer {
     background: none;
@@ -60,22 +61,15 @@
     .wrapper {
         height: auto;
     }
-
-    .side-bar {
+    .side-bar{
         position: absolute;
         height: 100%;
     }
-
     .benefits {
         padding: 16px;
-
     }
-
     .ant-layout-content {
         padding: 24px 16px
     }
 }
 
-@media (max-width: 360px) {
-
-}
