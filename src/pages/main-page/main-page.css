@@ -59,15 +59,19 @@
 
 @media (max-width: 576px) {
     .wrapper {
+        position: relative;
         height: auto;
     }
-    .side-bar{
+
+    .side-bar {
         position: absolute;
         height: 100%;
     }
+
     .benefits {
         padding: 16px;
     }
+
     .ant-layout-content {
         padding: 24px 16px
     }
