@@ -1,57 +1,38 @@
-import {CalendarOutlined, HeartFilled, IdcardOutlined, TrophyFilled} from "@ant-design/icons";
-import {Menu} from "antd";
-import s from "./menu.module.css"
-import sprite from "@utils/sprite.svg"
+import { CalendarTwoTone, HeartFilled, IdcardOutlined, TrophyFilled } from '@ant-design/icons';
+import { MaxLogo, MinLogo } from '@components/menu/logo';
+import { Menu } from 'antd';
 
 type Props = {
-    isCollapsed: boolean
-}
-export const NavMenu = ({isCollapsed}: Props) => {
-    return (
+    isCollapsed: boolean;
+};
+export const NavMenu = ({ isCollapsed }: Props) =>
+    (
         <>
-            {isCollapsed ?
-                <div className={`${s.logoContainer} ${s.minLogo}`}>
-                    <svg className={s.collapsedLogo}>
-                        <use xlinkHref={`${sprite}#collapsedlogo`}/>
-                    </svg>
-                </div>
-                :
-                <div className={`${s.logoContainer} ${s.fullLogo}`}>
-                    <svg className={s.logo}>
-                        <use xlinkHref={`${sprite}#logo`}/>
-                    </svg>
-                </div>
-            }
-
+            {isCollapsed ? <MinLogo/> : <MaxLogo/>}
             <Menu
-                className={s.menu}
-                mode={"vertical"}
+                mode={'vertical'}
                 items={[
                     {
                         key: '1',
-                        icon: <CalendarOutlined style={{color: "#120338"}}/>,
-                        label: "Календарь",
+                        icon: <CalendarTwoTone/>,
+                        label: 'Календарь',
                     },
                     {
                         key: '2',
-                        icon: <HeartFilled style={{color: "#120338"}}/>,
-                        label: "Тренировки",
+                        icon: <HeartFilled style={{color: ' var(--primary-dark-1) '}}/>,
+                        label: 'Тренировки',
                     },
                     {
                         key: '3',
-                        icon: <TrophyFilled style={{color: "#120338"}}/>,
-                        label: "Достижения",
+                        icon: <TrophyFilled style={{color: ' var(--primary-dark-1) '}}/>,
+                        label: 'Достижения',
                     },
                     {
                         key: '4',
-                        icon: <IdcardOutlined style={{color: "#120338"}}/>,
-                        label: "Профиль",
-                    }
+                        icon: <IdcardOutlined style={{color: ' var(--primary-dark-1) '}}/>,
+                        label: 'Профиль',
+                    },
                 ]}
-            >
-
-            </Menu>
-
+            />
         </>
     );
-};

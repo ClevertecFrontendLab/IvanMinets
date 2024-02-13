@@ -1,34 +1,43 @@
-*,
-*::after,
-*::before {
-    padding: 0;
+@import "/src/pages/main-page/main-page.css";
+
+@import "/src/components/menu/menu.css";
+@import "/src/components/menu/trigger/trigger.css";
+@import "/src/components/menu/menu-button/menu-button.css";
+@import "/src/components/menu/logo/logo.css";
+
+@import "/src/components/header/HeaderContent.css";
+
+@import "/src/components/main/main-content.css";
+@import "/src/components/card/card.css";
+
+@import "/src/components/footer-card/FooterCard.css";
+
+
+h1, h2, h3, h4, p {
     margin: 0;
-    box-sizing: border-box;
 }
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 
 body {
     font-family: 'Inter', sans-serif;
     backdrop-filter: blur(12px);
-    background: rgba(121, 156, 213, 0.1);
+    background: var(--primary-light-1);
+}
+
+ul {
+    list-style: none;
 }
 
 
-.ant-layout-sider {
-    background: #fff;
-}
-
-
-.ant-layout, .ant-layout-footer, .ant-layout-header {
-    background: none;
-}
-
-.ant-layout-footer, .ant-layout-header {
-    padding: 0;
-    height: auto;
-    line-height: 1;
-}
-
-.ant-layout.ant-layout-has-sider {
-    background: url("public/main_page_light.jpeg") no-repeat center;
-    background-size: cover;
+:root {
+    --white: #fff;
+    --primary-light-1: #F0F5FF;
+    --primary-light-2: #2F54EB;
+    --primary-dark-1: #061178;
+    --border: 5px;
 }
